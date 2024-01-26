@@ -173,7 +173,6 @@ namespace edz::cheat {
         Result ret = ResultEdzAttachFailed;
         uint64_t PID = 0;
         int64_t timeout = 1000'000'000;
-        int64_t interval = 10'000'000;
         while (timeout) {
             if (R_SUCCEEDED(pmdmntGetApplicationProcessId(&PID))) {
                 ret = dmntchtForceOpenCheatProcess();
